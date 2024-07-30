@@ -3,7 +3,8 @@ import 'dart:convert';
 import 'package:http_parser/http_parser.dart';
 
 class ApiService {
-  final String baseUrl = 'http://192.168.29.116:5000';
+  final String baseUrl =
+      'http://ec2-13-201-139-194.ap-south-1.compute.amazonaws.com:5000';
 
   Future<String> uploadAudioAndCreatePdf(String filePath) async {
     var uri = Uri.parse('$baseUrl/process_audio');
